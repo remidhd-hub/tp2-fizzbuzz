@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: fizzbuzz
+Version: 1.0.0
+Summary: Réalisation du TP 02
+Author: Rémi DAHM-DUPUIS
+Author-email: remi.dahm-dupuis@etu.unistra.fr
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
