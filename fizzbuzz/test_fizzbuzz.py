@@ -5,7 +5,12 @@ from unittest import TestCase
 class FizzBuzzTest(TestCase):
 
     def setUp(self):
+        """Initialisation avant chaque test"""
         self.fizzbuzz = FizzBuzz()
+
+    def tearDown(self):
+        """Libération des ressources après chaque test"""
+        self.fizzbuzz = None
 
     def test_returns_number_for_input_not_divisible_by_3_or_5(self):
         self.assertEqual('1',  self.fizzbuzz.convert(1))
