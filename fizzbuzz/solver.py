@@ -11,20 +11,16 @@ class Int2String(ABC):
 		
 class Displayer(ABC):
 	@abstractmethod
-	def display(self, number):
+	def display(self, text):
 		pass
 
 
-class ProblemSolver(Int2String, Displayer):
+class ProblemSolver:
+	def __init__(self, converter:Int2String, displayer:Displayer):
+		self.converter = converter
+		self.displayer = displayer
 	
-	def convert(self, number):
-		return FizzBuzz.convert(self, number)
-
-	def display(self, number):
-		for i in range(1, number+1):
-			resultat = self.convert(i)
-			print(resultat, end=" ")
-			
-
-#problemSolver = ProblemSolver()
-#problemSolver.display(100)
+	def solve(self, n=100):
+		for i in range(1, n+1):
+			text = self.converter.convert(i)
+			self.displayer.display(text)

@@ -3,7 +3,12 @@ from unittest import TestCase
 from unittest.mock import patch
 from solver import ProblemSolver
 	
-# ... définition des fonctions mock_convert et mock_display
+def mock_convert(n):
+	return f"X{n}"
+	
+def mock_display(text):
+	pass
+
 
 class ProblemSolverTest(TestCase):
 
