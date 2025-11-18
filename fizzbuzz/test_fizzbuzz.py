@@ -2,6 +2,7 @@
 from fizzbuzz import FizzBuzz
 from unittest import TestCase
 
+
 class FizzBuzzTest(TestCase):
 
     def setUp(self):

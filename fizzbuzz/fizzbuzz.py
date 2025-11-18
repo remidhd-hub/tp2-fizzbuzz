@@ -12,5 +12,3 @@ class FizzBuzz:
             return "Buzz"
         else:
             return str(number)
-
-
